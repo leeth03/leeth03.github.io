@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>이태형 | My Portfolio</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="libs/font-awesome/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@latest/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <style>
+        #student-info {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            background-color: #173b57;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            z-index: 9999;
+        }
+
+        body {
+            padding-top: 36px;
+        }
+
+        header {
+            top: 36px;
+        }
+
+        #mobile-menu-open {
+            top: 46px;
+        }
+
+        section, #about, #experience, #education,
+        #projects, #skills, #contact {
+            scroll-margin-top: 50px;
+        }
+
+        .project-image img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            background-color: #f5f5f5;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info p {
+            line-height: 1.8;
+            word-break: keep-all;
+        }
+
+        .project-info a {
+            font-weight: bold;
+        }
+
+        .tech-stack {
+            font-size: 13px;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .project-image {
+                display: block;
+                float: none;
+            }
+
+            .project-image img {
+                width: 100%;
+                height: 220px;
+            }
+
+            .project-info {
+                position: static;
+                margin: 0;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="student-info">
+        2022810060 이태형
+    </div>
+
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <ul id="menu" class="shadow">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="lead">
+
+        <div id="lead-content">
+
+            <h1>Taehyung Lee</h1>
+
+            <h2>Computer Engineering Student</h2>
+
+            <a href="#projects" class="btn-rounded-white">
+                View My Projects
+            </a>
+
+        </div>
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down"
+                   aria-hidden="true"></i>
+            </span>
+        </div>
+
+    </div>
+
+    <div id="about">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+
+                <div class="col-md-8">
+                    <p>
+                        안녕하세요. 한경국립대학교 컴퓨터공학을
+                        전공하고 있는 이태형입니다.
+                        웹프로그래밍, 공공데이터 활용 서비스,
+                        인공지능 및 시스템 개발에 관심을 가지고 있습니다.
+                        HTML5, CSS3, JavaScript와 Open API를 활용하여
+                        다양한 웹 애플리케이션을 개발하였으며,
+                        사용자에게 편리한 서비스를 제공하는
+                        소프트웨어 개발을 목표로 하고 있습니다.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="experience" class="background-alt">
+
+        <h2 class="heading">Experience</h2>
+
+        <div id="experience-timeline">
+
+            <div data-date="September 2026 – November 2026">
+                <h3>Web Programming</h3>
+                <h4>웹프로그래밍 실습 프로젝트</h4>
+
+                <p>
+                    HTML5, CSS3, JavaScript, Bootstrap을 활용한
+                    웹 애플리케이션 개발과 Open API Mashup,
+                    PWA 및 웹 호스팅 실습을 수행하였습니다.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="education">
+
+        <h2 class="heading">Education</h2>
+
+        <div class="education-block">
+
+            <h3>한경국립대학교</h3>
+
+            <span class="education-date">
+                2022 – Present
+            </span>
+
+            <h4>컴퓨터공학 전공</h4>
+
+            <ul>
+                <li>Web Programming</li>
+                <li>Database</li>
+                <li>Operating Systems</li>
+                <li>Computer Networks</li>
+                <li>System Analysis and Design</li>
+                <li>Artificial Intelligence</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="projects" class="background-alt">
+
+        <h2 class="heading">Projects</h2>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="project shadow-large">
+
+                    <div class="project-image">
+                        <img src="images/air-pollution.png"
+                             alt="대기오염 정보 조회 화면">
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Air Pollution Inquiry Mashup</h3>
+
+                        <p>
+                            공공데이터 Open API와 지도 API를 활용하여
+                            지역별 대기오염 정보를 조회하는 웹 서비스입니다.
+                            사용자가 지역을 선택하면 해당 지역의
+                            미세먼지 및 초미세먼지 정보를 확인할 수 있습니다.
+                        </p>
+
+                        <div class="tech-stack">
+                            HTML5 · CSS3 · JavaScript · Open API
+                        </div>
+
+                        <a href="https://thlee-airkorea.netlify.app/"
+                           target="_blank" rel="noopener">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project shadow-large">
+
+                    <div class="project-image">
+                        <img src="images/culture.png"
+                             alt="서울시 문화행사 알리미">
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>서울시 문화행사 알리미 PWA</h3>
+
+                        <p>
+                            서울시 공공데이터 Open API를 활용하여
+                            다양한 공연, 전시 및 문화행사 정보를
+                            제공하는 웹 애플리케이션입니다.
+                            PWA 기술을 적용하여 지원되는 브라우저에서
+                            애플리케이션 형태로 설치할 수 있습니다.
+                        </p>
+
+                        <div class="tech-stack">
+                            JavaScript · Open API · PWA · Netlify
+                        </div>
+
+                        <a href="https://seoul-api-thlee.netlify.app/"
+                           target="_blank" rel="noopener">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project shadow-large">
+
+                    <div class="project-image">
+                        <img src="images/library.png"
+                             alt="서울시 공공도서관 검색">
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>서울시 공공도서관 검색 Mashup</h3>
+
+                        <p>
+                            서울시 공공도서관 정보 Open API와
+                            Kakao Map API를 결합한 웹 서비스입니다.
+                            지도에 도서관의 위치를 표시하고
+                            이용자가 도서관 정보를 편리하게
+                            검색할 수 있도록 구현하였습니다.
+                        </p>
+
+                        <div class="tech-stack">
+                            JavaScript · Seoul Open API · Kakao Map
+                        </div>
+
+                        <a href="https://thlee-seoul-library.netlify.app/"
+                           target="_blank" rel="noopener">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="project shadow-large">
+
+                    <div class="project-image">
+                        <img src="images/bike.png"
+                             alt="서울 따릉이 스마트 라이딩 도우미">
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Seoul Bike Mate</h3>
+
+                        <p>
+                            서울시 따릉이 실시간 대여정보,
+                            기상정보 및 대기환경 정보를 통합하여
+                            제공하는 스마트 라이딩 도우미입니다.
+                            지도 API와 서버리스 기술을 활용하여
+                            편리한 자전거 이용을 지원합니다.
+                        </p>
+
+                        <div class="tech-stack">
+                            Bootstrap · Open API · Netlify Functions
+                        </div>
+
+                        <a href="https://seoul-riding-info-thlee.netlify.app/"
+                           target="_blank" rel="noopener">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contact">
+
+        <h2>Get in Touch</h2>
+
+        <p style="color: white;">
+            이태형 | 한경국립대학교 컴퓨터공학
+        </p>
+
+        <p style="color: white;">
+            Email : thth9525@gmail.com
+        </p>
+
+        <a href="https://github.com/leeth03"
+           target="_blank"
+           rel="noopener"
+           class="btn-rounded-white">
+
+            <i class="fa fa-github" aria-hidden="true"></i>
+            My GitHub
+
+        </a>
+
+    </div>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2022810060 Taehyung Lee
+                    </p>
+                </div>
+
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up"
+                           aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="col-sm-5 social">
+
+                    <ul>
+                        <li>
+                            <a href="https://github.com/leeth03"
+                               target="_blank" rel="noopener">
+                                <i class="fa fa-github"
+                                   aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
